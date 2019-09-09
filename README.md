@@ -1,10 +1,11 @@
 # AutoDMS-V2
 
-Ce dépot contient le code source pour la nouvelle version du AutoDMS qui combine règles dures pour une première passe de classification des ruptures, puis du ML pour une deuxième passe sur les ruptures non classées.
+**Ce dépot contient le code source pour la nouvelle version du AutoDMS qui combine règles dures pour une première passe de classification des ruptures, puis du ML pour une deuxième passe sur les ruptures non classées.**
 
 
-Le dossier:
-    - '/Data' contient: 
+Le dépot AutoDMS-V2 est composé de plusieurs dossiers.
+
+   - '/Data' contient: 
         - Le code qui extrait les données d'entrainement depuis la table BigQuery (data_extraction.py) et exporte ces données dans un .csv (Data_Raw.csv)
         - Le code qui fait le cleaning rapide des données brutes (data_cleaning_for_training.py) et exporte les données dans un .csv (Data_Roughly_Cleaned.csv)
         - Le code qui fait le resampling de nos données à cause du fort déséquilibre du problème (data_resampling.py) et exporte les données dans un .csv (Data_Resampled.csv). Dans ce code on retrouve les réglages pour resampling du problème
