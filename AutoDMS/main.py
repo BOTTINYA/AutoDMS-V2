@@ -11,8 +11,8 @@ import numpy as np
 from time import time
 import itertools
 
-import daily_data_preprocessing
-from regles_dures_classification import hard_coded_rules
+from AutoDMS import daily_data_preprocessing
+from AutoDMS.regles_dures_classification import hard_coded_rules
 
 import matplotlib.pyplot as plt
 import collections
@@ -31,7 +31,7 @@ print('Batch prediction of daily shortages...')
 #---------------------------- Choose which model to load -------------------
 #get the trained model
 from joblib import load
-model = load('trained_model.joblib')
+model = load('../AutoDMS-V2/AutoDMS/trained_model.joblib')
 
 
 

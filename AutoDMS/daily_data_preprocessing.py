@@ -14,7 +14,7 @@ import collections
     
 class preprocessed_data_for_prediction:
 	# ------------------- Récupération des données qui ont servi à l'entrainement du modèle ----------------
-	data = pd.read_csv('../Data/Data_Resampled.csv')
+	data = pd.read_csv('../AutoDMS-V2/Data/Data_Resampled.csv')
 
 	training_feature_names = list(data)[:-1]            #le nom des colonnes des features d'entrainement
 	training_target_name = list(data)[-1]                #le nom de la colonne des classes cibles
